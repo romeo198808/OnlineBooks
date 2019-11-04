@@ -1,0 +1,119 @@
+.header-elements {
+  min-height: 110px;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 1));
+}
+.header__wrapper {
+  display: flex;
+  min-height: 110px;
+}
+.header-logo {
+  width: 150px;
+
+  box-shadow: 0 0 3px red;
+}
+.header-search {
+  display: flex;
+  align-items: center;
+  width: 457px;
+  margin-left: 40px;
+  & label {
+    font-size: 0;
+  }
+}
+#page-search {
+  width: 332px;
+  min-height: 40px;
+
+  border: 4px solid #79b260;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+}
+.search-button {
+  position: relative;
+  width: 124px;
+  height: 40px;
+  padding: 0;
+  padding-left: 43px;
+
+  font-size: 23px;
+  line-height: 40px;
+  color: #ffffff;
+
+  border: none;
+  background-color: #79b260;
+  border-radius: 0 5px 5px 0;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 8px;
+
+    width: 24px;
+    height: 24px;
+
+    background-color: inherit;
+    background-image: url("../img/icon-search.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+.header-cart {
+  display: block;
+  width: 190px;
+  margin-left: 53px;
+}
+.cart {
+  position: relative;
+  margin: 0;
+  margin-top: 25px;
+  padding-left: 35px;
+
+  font-size: 24px;
+  line-height: 30px;
+  & a {
+    color: inherit;
+    text-decoration: none;
+  }
+  & span {
+    font-size: 14px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 27px;
+    height: 29px;
+
+    background-color: inherit;
+    background-image: url("../img/icon-cart.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+.cart__price {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-top: 5px;
+
+  font-size: 27px;
+  line-height: 28px;
+  font-weight: bold;
+}
+.cart__button {
+  width: 82px;
+  height: 28px;
+  padding: 0;
+  margin-left: 15px;
+
+  font-size: 15px;
+  line-height: 26px;;
+  color: #ffffff;
+
+  background-image: linear-gradient(to top, #242424, #424242);
+  box-shadow: inset 1px 1px rgba(118, 118, 118, 0.75);
+  border: 1px solid #000000;
+  border-radius: 3px;
+}
