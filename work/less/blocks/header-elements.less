@@ -1,15 +1,21 @@
 .header-elements {
   min-height: 110px;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 1));
+  border-bottom: 1px solid #cecece;
 }
 .header__wrapper {
   display: flex;
   min-height: 110px;
 }
 .header-logo {
+  display: flex;
+  align-items: center;
   width: 150px;
 
-  box-shadow: 0 0 3px red;
+  & img {
+    width: 140px;
+    margin-left: 12px;
+  }
 }
 .header-search {
   display: flex;
@@ -65,7 +71,7 @@
 .cart {
   position: relative;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 20px;
   padding-left: 35px;
 
   font-size: 24px;
@@ -116,4 +122,39 @@
   box-shadow: inset 1px 1px rgba(118, 118, 118, 0.75);
   border: 1px solid #000000;
   border-radius: 3px;
+}
+.wish__wrap {
+  position: relative;
+  margin-top: 19px;
+  height: 25px;
+  padding-left: 20px;
+  padding-top: 45px;
+
+  background-image: url("../img/icon-star.png");
+  background-repeat: no-repeat;
+  background-position: 48px 15px;
+  border-left: 1px solid #c6c6c6;
+  &::before {
+    content: "20";
+    position: absolute;
+    top: 33px;
+    left: 83px;
+
+    width: 28px;
+    height: 16px;
+
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #ffffff;
+
+    background-color: #79b260;
+    border-radius: 8px;
+  }
+}
+.header-wish-list {
+  font-size: 21px;
+  line-height: 27px;
+  text-decoration: none;
+  color: inherit;
 }
