@@ -1,0 +1,36 @@
+.genry__list {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  font-size: 17px;
+  line-height: 39px;
+
+  list-style: none;
+}
+.genry__item {
+  width: 140px;
+
+  background-image: linear-gradient(#f9f9f9, #e2e2e2);
+  border: 1px solid #d6d6d6;
+  border-right: none;
+  &:last-child {
+    border-right: 1px solid #d6d6d6;
+  }
+  & a {
+    display: block;
+
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+  }
+  &--active {
+    font-weight: bold;
+    border-bottom: none;
+    background-image: none;
+    background-color: #ffffff;
+    transition: all 0.3s;
+  }
+}
