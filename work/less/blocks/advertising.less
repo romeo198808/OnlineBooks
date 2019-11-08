@@ -63,6 +63,7 @@
   border: none;
   background-color:rgba(0, 0, 0, 0.3);
   border-radius: 50%;
+  outline: none;
   &::before {
     content: "";
     position: absolute;
@@ -75,6 +76,16 @@
     border-left: 6px solid #000000;
     border-top: 6px solid #000000;
 
+  }
+  &:hover,
+  &:focus {
+    transform: scale(1.1, 1.1);
+    transition: transform 0.3s;
+  }
+  &:active {
+    transform: scale(1, 1);
+    opacity: 0.5;
+    transition: all 0.3s;
   }
 }
 .button-previous {
@@ -151,4 +162,14 @@
 
   background-color: #58b258;
   border-radius: 5px;
+  &:hover,
+  &:focus {
+    transform: scale(1.1, 1.1);
+    transition: transform 0.3s;
+  }
+  &:active {
+    transform: scale(0.9, 0.9);
+    opacity: 0.5;
+    transition: all 0.3s;
+  }
 }

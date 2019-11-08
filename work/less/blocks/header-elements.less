@@ -122,6 +122,14 @@
   box-shadow: inset 1px 1px rgba(118, 118, 118, 0.75);
   border: 1px solid #000000;
   border-radius: 3px;
+  &:hover,
+  &:focus {
+    border: 1px solid #79b260;
+    transition: all 0.3s;
+  }
+  &:active {
+    opacity: 0.5;
+  }
 }
 .wish__wrap {
   position: relative;
@@ -157,4 +165,12 @@
   line-height: 27px;
   text-decoration: none;
   color: inherit;
+  &:hover,
+  &:focus {
+    color: #7bb461;
+  }
+  &:active {
+    color: inherit;
+    opacity: 0.5;
+  }
 }
