@@ -1,0 +1,154 @@
+.advertising {
+  display: flex;
+  justify-content: space-between;
+  height: 304px;
+}
+.advertising__slider {
+  position: relative;
+  width: 715px;
+}
+.advertising__list {
+  position: relative;
+  height: 304px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  overflow: hidden;
+}
+.advertising__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 425px;
+  height: 177px;
+  padding-left: 290px;
+  padding-top: 127px;
+
+  color: #ffffff;
+  text-transform: capitalize;
+
+  background-image: url("../img/advertising-background.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  &-wrap {
+    width: 360px;
+    text-align: center;
+  }
+  &--1 {
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: bold;
+  }
+  &--2 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  &--3 {
+    font-size: 21px;
+    line-height: 28px;
+    font-weight: bold;
+  }
+}
+.button-control {
+  position: absolute;
+  top: 127px;
+
+  width: 40px;
+  height: 40px;
+
+  font-size: 0;
+
+  border: none;
+  background-color:rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 12px;
+
+    width: 8px;
+    height: 8px;
+
+    border-left: 6px solid #000000;
+    border-top: 6px solid #000000;
+
+  }
+}
+.button-previous {
+  left: 12px;
+  &::before {
+    transform: rotate(-45deg);
+  }
+}
+.button-next {
+  right: 12px;
+  &::before {
+    transform: rotate(135deg);
+  }
+}
+.advertising__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 269px;
+
+  color: #ffffff;
+
+  background-color: #c9c9c9;
+  background-image: radial-gradient(#b6b6b6, #4b4b4b);
+}
+.advertising__block-img {
+  order: 3;
+  width: 177px;
+  margin-top: 10px;
+}
+.advertising__row {
+  &--1 {
+    order: 1;
+    margin-top: 15px;
+
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 30px;
+  }
+  &--2 {
+    order: 2;
+
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 200;
+  }
+  &--3 {
+    order: 4;
+
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 200;
+  }
+  &--4 {
+    order: 5;
+
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+}
+.advertising__button {
+  display: block;
+  order: 5;
+  width: 110px;
+  height: 30px;
+
+  font-size: 19px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: #58b258;
+  border-radius: 5px;
+}
