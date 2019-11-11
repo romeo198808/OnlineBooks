@@ -1,6 +1,13 @@
 .books {
   width: 800px;
 }
+.books__title {
+  margin: 0;
+  padding: 20px 24px;
+
+  border: 1px solid #d6d6d6;
+  border-bottom: none;
+}
 .books__list {
   position: relative;
   z-index: 10;
@@ -49,6 +56,35 @@
     border-radius: 5px;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
   }
+  &--sale {
+    &::before {
+      content: "30%";
+      position: absolute;
+      top: -6px;
+      right: -9px;
+
+      width: 50px;
+      height: 50px;
+
+      font-size: 19px;
+      line-height: 36px;
+      font-weight: bold;
+      color: #ffffff;
+
+      border-radius: 50%;
+      background-color: #f05356;
+    }
+    &::after {
+      content: "off";
+      position: absolute;
+      top: 20px;
+      right: 10px;
+
+      font-size: 13px;
+      color: #ffffff;
+    }
+  }
+
 }
 .books__desc {
 
