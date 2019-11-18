@@ -1,0 +1,43 @@
+.breadcrumbs {
+  display: flex;
+  width: 977px;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 17px;
+
+  font-size: 16px;
+  line-height: 30px;
+
+  list-style: none;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.breadcrumbs__item {
+  position: relative;
+  margin-right: 10px;
+  padding-right: 20px;
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 11px;
+
+    width: 7px;
+    height: 10px;
+
+    background-image: url("../img/breadcrumps.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &:last-child::before {
+    opacity: 0;
+  }
+}
+.breadcrumbs__link {
+  position: relative;
+  display: block;
+
+  color: #a6a6a6;
+  text-decoration: none;
+}
