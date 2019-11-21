@@ -45,7 +45,6 @@ gulp.task("clean", async function() {
 gulp.task("copy", async function() {
   return gulp.src([
     "work/*.html",
-    "work/img/sprite.svg",
     "work/fonts/**/*",
     "work/js/**/*",
     "work/css/**/*"], { base: "work" })
@@ -101,4 +100,4 @@ gulp.task("serve", async function() {
   gulp.watch("work/img/icon-*.svg", gulp.series("sprite")).on("change", server.reload);
 });
 gulp.task("go", gulp.series("style", "cwebp", "sprite", "html", "serve"));
-gulp.task("build", gulp.series("clean", "style", "normalize", "sprite", "html", "imagemin", "copy", "cwebp"));
+gulp.task("build", gulp.series("clean", "style", "normalize", "html", "imagemin", "copy", "cwebp"));

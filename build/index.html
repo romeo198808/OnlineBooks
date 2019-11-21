@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Books, sale of the books online">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>BooksOnline-Home page</title>
+  </head>
+  <body>
+
+  <header class="page-header">
+    <nav class="user-nav">
+      <div class="header__wrap">
+        <ul class="user-nav__list">
+          <li class="user-nav__item"><a href="#" class="user-nav__link">Sign in</a></li>
+          <li class="user-nav__item"><a href="#" class="user-nav__link">My Account</a></li>
+          <li class="user-nav__item"><a href="#" class="user-nav__link">Order status</a></li>
+          <li class="user-nav__item"><a href="#" class="user-nav__link">Help</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="header-elements">
+      <div class="header__wrap header__wrapper">
+        <div class="header-logo">
+          <img src="img/logo.svg" alt="Logo">
+        </div>
+        <div class="header-search">
+          <input id="page-search" type="search" name="search" value="">
+          <label for="page-search">Search</label>
+          <button type="submit" class="search-button">Search</button>
+        </div>
+        <div class="header-cart">
+          <p class="cart"><a href="#">Your cart</a> <span class="cart__items">(2 items)</span></p>
+          <p class="cart__price">$125.0
+            <button class="cart__button" type="button">Checkout</button>
+          </p>
+        </div>
+        <div class="wish__wrap">
+          <a href="#" class="header-wish-list">Wish list</a>
+        </div>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <div class="header__wrap">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Computers</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Cooking</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link main-nav__link--active">Education</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Fiction</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Health</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Mathematics</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Medical</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Reference</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Science</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Shop of books online</h1>
+    <article class="advertising">
+      <h2 class="visually-hidden">Advertising</h2>
+      <div class="advertising__slider">
+        <ul class="advertising__list">
+          <li class="advertising__item advertising__item--active">
+            <div class="advertising__item-wrap">
+              <span class="advertising__item--1">A black wooman</span> <br><span class="advertising__item--2">(Jack Reacher #17)</span> <br><span class="advertising__item--3">By Lee Child</span>
+            </div>
+          </li>
+          <li class="advertising__item">
+            <div class="advertising__item-wrap">
+              <span class="advertising__item--1">A wanted man</span> <br><span class="advertising__item--2">(Jack Reacher #17)</span> <br><span class="advertising__item--3">By Lee Child</span>
+            </div>
+          </li>
+          <li class="advertising__item">
+            <div class="advertising__item-wrap">
+              <span class="advertising__item--1">A litle child</span> <br><span class="advertising__item--2">(Jack Reacher #17)</span> <br><span class="advertising__item--3">By Lee Child</span>
+            </div>
+          </li>
+        </ul>
+        <button type="button" class="button-control button-previous">previous</button>
+        <button type="button" class="button-control button-next">next</button>
+      </div>
+      <div class="advertising__block">
+        <img src="img/big-data.png" alt="The Human Face of Big Data" class="advertising__block-img">
+        <span class="advertising__row advertising__row--1">Dael of the Month</span>
+        <span class="advertising__row advertising__row--2">The Human Face of Big Data</span>
+        <span class="advertising__row advertising__row--3">Save 45% Today</span>
+        <span class="advertising__row advertising__row--4">$27.50</span>
+        <a href="#" class="advertising__button">Buy now</a>
+      </div>
+    </article>
+
+    <div class="page-main__wrap">
+      <section class="category">
+        <h2 class="category__title">Categories</h2>
+        <ul class="category__list">
+          <li class="category__item category__item--active"><a href="index.html" class="category__link">All</a></li>
+          <li class="category__item"><a href="#" class="category__link">Fiction & Literature</a>
+            <ul class="category__inner-list">
+              <li class="category__inner-item"><a href="#">Children</a></li>
+              <li class="category__inner-item"><a href="#">Science Fiction</a></li>
+              <li class="category__inner-item"><a href="#">Fantasy</a></li>
+              <li class="category__inner-item"><a href="#">Mystery</a></li>
+              <li class="category__inner-item"><a href="#">Romance</a></li>
+              <li class="category__inner-item"><a href="#">Horror</a></li>
+              <li class="category__inner-item"><a href="#">Poetry</a></li>
+              <li class="category__inner-item"><a href="#">Literature</a></li>
+              <li class="category__inner-item"><a href="#">Crime</a></li>
+            </ul>
+          </li>
+          <li class="category__item"><a href="#" class="category__link">Non - Fiction</a>
+            <ul class="category__inner-list">
+              <li class="category__inner-item"><a href="#">Comic</a></li>
+              <li class="category__inner-item"><a href="#">Cook</a></li>
+              <li class="category__inner-item"><a href="#">Psychology</a></li>
+              <li class="category__inner-item"><a href="#">Medical</a></li>
+              <li class="category__inner-item"><a href="#">Art</a></li>
+              <li class="category__inner-item"><a href="#">Photography</a></li>
+              <li class="category__inner-item"><a href="#">Law</a></li>
+              <li class="category__inner-item"><a href="#">History</a></li>
+              <li class="category__inner-item"><a href="#">Business</a></li>
+              <li class="category__inner-item"><a href="#">Computer</a></li>
+            </ul>
+          </li>
+          <li class="category__item"><a href="#" class="category__link">Other</a>
+            <ul class="category__inner-list">
+              <li class="category__inner-item"><a href="#">Baby</a></li>
+              <li class="category__inner-item"><a href="#">Sex</a></li>
+              <li class="category__inner-item"><a href="#">Travel</a></li>
+              <li class="category__inner-item"><a href="#">Science</a></li>
+              <li class="category__inner-item"><a href="#">Sports</a></li>
+            </ul>
+          </li>
+      </ul></section>
+
+      <section class="books">
+        <h2 class="books__title visually-hidden">List of the books</h2>
+        <ul class="genry__list">
+          <li class="genry__item best-sellers genry__item--active"><a href="#">Best sellers</a></li>
+          <li class="genry__item new-arrivals"><a href="#">New Arrivals</a></li>
+          <li class="genry__item used-books"><a href="#">Used Books</a></li>
+          <li class="genry__item special-offers"><a href="#">Special Offers</a></li>
+        </ul>
+        <ul class="books__list">
+
+        </ul>
+        <ul class="page__list">
+          <li class="page__item page__item--active"><a href="#">1</a></li>
+          <li class="page__item"><a href="#">2</a></li>
+          <li class="page__item"><a href="#">3</a></li>
+          <li class="page__item"><a href="#">4</a></li>
+          <li class="page__item"><a href="#">5</a></li>
+          <li class="page__item"><a href="#">6</a></li>
+        </ul>
+      </section>
+    </div>
+  <template id="temp">
+    <li class="books__item"><a href="cart-product.html" class="books__link">
+      <img src="" alt="">
+      <p class="books__desc"></p>
+      <span class="books__price"></span>
+    </a></li>
+  </template>
+  </main>
+
+  <footer class="page-footer">
+    <nav class="footer-nav">
+      <ul class="footer-nav__list">
+        <li class="footer-nav__item"><a href="#">Biography & True Stories</a>
+          <ul class="footer-nav__inner-list">
+            <li class="footer-nav__inner-item"><a href="#">General</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Diaries, Letters & Journals</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Memories</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">True Stories</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Generic Exams</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">GK Titles</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Medical Entrance</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Other Entrance Exams</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">PG Entrance Examinations</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Self help Titles</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Sociology</a> </li>
+          </ul>
+        </li>
+        <li class="footer-nav__item"><a href="#">Professional & Reference</a>
+          <ul class="footer-nav__inner-list">
+            <li class="footer-nav__inner-item"><a href="#">Academic and Reference</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Buisiness Trade</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Engineering and Computer Science</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Humanities, Social Sciences and Languages</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Introduction to Computers</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Science and Math</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Trade Business</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">English Language & Literature</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">English Language Teaching</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Environment Awareness</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Environment Protection</a> </li>
+          </ul>
+        </li>
+        <li class="footer-nav__item"><a href="#">Earth Sciences</a>
+          <ul class="footer-nav__inner-list">
+            <li class="footer-nav__inner-item"><a href="#">Earth Sciences</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Geography</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">The Environment</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Regional & Area Planning</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Fantasy</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Gay</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Humorous</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Interactive</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Legal</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Lesbian</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Men'S Adventure</a> </li>
+          </ul>
+        </li>
+        <li class="footer-nav__item"><a href="#">Mathematics</a>
+          <ul class="footer-nav__inner-list">
+            <li class="footer-nav__inner-item"><a href="#">Algebra</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Differential Equations</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Discreate Mathematics</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Fourier Analisys</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Numerical Analisys</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Probability</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Statistical Methods/data Analisys</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Stochastic And Random Processies</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Topology</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Statistics</a> </li>
+            <li class="footer-nav__inner-item"><a href="#">Mathematics</a> </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="footer-bank">
+      <p class="footer-bank__text">We accept all major Credit Card/Debit Card/Internet Banking</p>
+      <ul class="footer-bank__list">
+        <li class="footer-bank__item">Master Card</li>
+        <li class="footer-bank__item">American Express</li>
+        <li class="footer-bank__item">Visa</li>
+      </ul>
+    </div>
+    <div class="footer-copirayt">
+      <p class="footer-copirayt__text">Conditions of Use Privacy Notice &copy; 2012-2013, Booksonline, Inc. or its affiliates</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/categories.js"></script>
+  <script src="js/main-nav.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/genry.js"></script>
+  <script src="js/page-list.js"></script>
+
+
+  </body>
+</html>
